@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcane Infrastructure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Arcane Infrastructure</h1>
+
+  <div class="container">
+    <!-- Resources -->
+    <div class="panel">
+      <h2>Resources</h2>
+      <p>Unstable Mana: <span id="unstable">0</span></p>
+      <p>Refined Mana: <span id="refined">0</span></p>
+      <p>Instability: <span id="instability">0</span></p>
+    </div>
+
+    <!-- Buildings -->
+    <div class="panel">
+      <h2>Infrastructure</h2>
+      <button onclick="buyGenerator()">Generator (<span id="genCost">10</span>)</button>
+      <p>Owned: <span id="genCount">1</span></p>
+
+      <button onclick="buyRefiner()">Refiner (<span id="refCost">20</span>)</button>
+      <p>Owned: <span id="refCount">0</span></p>
+
+      <button onclick="buyAnchor()">Anchor (<span id="anchorCost">50</span>)</button>
+      <p>Owned: <span id="anchorCount">0</span></p>
+    </div>
+
+    <!-- Rules -->
+    <div class="panel">
+      <h2>Rules (V1: Hardcoded)</h2>
+      <p>• Auto-refine when Unstable Mana > 100</p>
+      <p>• Stabilise when Instability > 50</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
